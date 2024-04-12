@@ -1,7 +1,7 @@
 import imaplib, email
 
-user = 'krstinhill4211@gmail.com'
-password = 'youp eirh vpvm jqqa'
+user = 'email@gmail.com'
+password = 'app password'
 imap_url = 'imap.gmail.com'
 
 def search(key, value, con): 
@@ -22,7 +22,7 @@ con.login(user, password)
 
 con.select('Inbox') 
 
-msgs = get_emails(search('FROM', 'amanda.panarese@fullstackacademy.com', con))
+msgs = get_emails(search('FROM', 'email@email.com', con))
 
 for msg in msgs[::-1]: 
 	for sent in msg:
